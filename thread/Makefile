@@ -1,3 +1,3 @@
 
 t:
-	gcc -o thread main.c && ./thread
+	gcc -o thread main.c -lpthread && ./thread
