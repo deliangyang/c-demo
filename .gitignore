@@ -2,3 +2,5 @@
 /.editorconfig
 /thread/thread
 /**/*.bin
+/bin/*
+!/bin/.gitignore
