@@ -19,3 +19,13 @@ changemainentry:
 	gcc -o bin/changemainentry change_main_entry/test.c # -nostartfiles -etest
 	chmod +x ./bin/changemainentry
 	./bin/changemainentry
+
+calctest:
+	gcc -o bin/calctest calc/main.c
+	chmod +x ./bin/calctest
+	./bin/calctest
+
+pointtest:
+	gcc -o bin/pointtest point/test.c
+	chmod +x ./bin/pointtest
+	./bin/pointtest
