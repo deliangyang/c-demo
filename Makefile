@@ -35,4 +35,5 @@ pointfunc:
 	chmod +x ./bin/pointfunc
 	objdump -d ./bin/pointfunc |grep --color '<test>'
 	objdump -d ./bin/pointfunc |grep --color '<main>'
+	gcc -S point/func.c  -o point/func.s
 	./bin/pointfunc
