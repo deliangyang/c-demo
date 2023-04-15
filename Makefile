@@ -29,3 +29,10 @@ pointtest:
 	gcc -o bin/pointtest point/test.c
 	chmod +x ./bin/pointtest
 	./bin/pointtest
+
+pointfunc:
+	gcc -o bin/pointfunc point/func.c
+	chmod +x ./bin/pointfunc
+	objdump -d ./bin/pointfunc |grep --color '<test>'
+	objdump -d ./bin/pointfunc |grep --color '<main>'
+	./bin/pointfunc
