@@ -37,3 +37,9 @@ pointfunc:
 	objdump -d ./bin/pointfunc |grep --color '<main>'
 	gcc -S point/func.c  -o point/func.s
 	./bin/pointfunc
+
+shellx:
+	gcc -o bin/shell shellcode/shell.c
+	gcc -o bin/shellcode shellcode/test.c
+	chmod +x ./bin/shellcode
+	./bin/shellcode
